@@ -207,7 +207,7 @@
             android:layout_gravity="center"/>
 
 
-        <TextView
+        <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -215,6 +215,7 @@
             android:layout_weight="4"
             android:textColor="@color/yellow"
             android:id="@+id/translated_text"
+            android:background="@null"
             android:padding="20dp"
             android:textSize="15sp"
             />

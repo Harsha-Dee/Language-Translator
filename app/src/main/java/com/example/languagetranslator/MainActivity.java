@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
     private Spinner fromSpinner, toSpinner;
     //private TextInputEditText inputText;
     private EditText inputText;
-    private ImageView micBtn, sourcespeaker, destspeaker;
+    private ImageView micBtn;
     private MaterialButton translateBtn;
-    private TextView outputText;
+    private EditText outputText;
     private TextToSpeech textToSpeech;
 
     String[] fromLanguage = {"From", "English", "Afrikaans", "Arabic", "Byelorussian", "Bulgarian", "Bengali", "Catalan", "Czech", "Welsh", "Hindi", "Urdu"};
@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
         micBtn = findViewById(R.id.mic);
         translateBtn = findViewById(R.id.translate);
 
-        sourcespeaker = findViewById(R.id.sourceSpeaker);
-        destspeaker = findViewById(R.id.destSpeaker);
+        ImageView sourcespeaker = findViewById(R.id.sourceSpeaker);
+        ImageView destspeaker = findViewById(R.id.destSpeaker);
 
         fromSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
